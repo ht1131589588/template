@@ -20,7 +20,7 @@ class Menu extends React.Component {
 		isEditor: false, //是否修改
 		activeData: undefined, //选中节点信息
 	}
-	componentWillMount() {
+	componentDidMount() {
 		this.getMenuLists();
 	}
 	//获取菜单列表

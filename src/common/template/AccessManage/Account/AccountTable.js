@@ -255,7 +255,7 @@ class AccountTable extends React.Component {
 	}
 	
 	// props参数发生时， table重置， 重新加载
-	componentWillReceiveProps(nextProps){
+	UNSAFE_componentWillReceiveProps(nextProps){
         if(nextProps !== this.props){
             this.setState(
                 () => {

@@ -23,7 +23,7 @@ class MenuLists extends Component {
         menuLists:[],//菜单列表
         roleMenuData:[]
     }
-    componentWillMount() {
+    componentDidMount() {
         //获取菜单列表,根绝请求数据设置菜单列表
         const res = {
             "success": true,
@@ -197,7 +197,7 @@ class MenuLists extends Component {
             })
         }
     }
-    componentWillReceiveProps(nextProps) {
+    UNSAFE_componentWillReceiveProps(nextProps) {
         //当选中角色改变时重新获取权限配置
         if(nextProps.activeRole.id !== this.props.activeRole.id ){
             this.getRoleMenuLists({roleId:nextProps.activeRole.id,sourceCode:'pc'})

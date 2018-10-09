@@ -4,7 +4,7 @@
  */
 import React, { Component } from 'react';
 import { Form, Input, Select, message } from 'antd';
-import MainModal from '../../../common/components/MainModal';
+import MainModal from '../../../components/MainModal';
 
 const FormItem = Form.Item;
 const Option = Select.Option;
@@ -19,7 +19,7 @@ class AddOrEditAccount extends Component {
     state = {
         roleList: [],
     }
-    componentWillMount() {
+    componentDidMount() {
         // 获取用户角色列表信息
         const roleList = [
             {

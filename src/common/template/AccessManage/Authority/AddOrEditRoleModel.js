@@ -4,7 +4,7 @@
  */
 import React, { Component } from 'react';
 import { Form, Input } from 'antd';
-import MainModal from '../../../common/components/MainModal';
+import MainModal from '../../../components/MainModal';
 
 const FormItem = Form.Item;
 const formItemLayout = {

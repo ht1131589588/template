@@ -16,7 +16,7 @@ class RoleLists extends Component {
         isEditor: false, //是否是编辑
         editData: undefined, //当前编辑的角色的信息
 	}
-	componentWillMount() {
+	componentDidMount() {
         //获取角色列表
 		this.getDataLists();
     }
