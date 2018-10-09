@@ -26,170 +26,125 @@ class MenuLists extends Component {
     componentDidMount() {
         //获取菜单列表,根绝请求数据设置菜单列表
         const res = {
-            "success": true,
-            "msg": "成功",
-            "obj": [
-                {
-                    "id": 150,
-                    "parentId": -1,
-                    "name": "综合画像",
-                    "url": "",
-                    "iconUrl": "n_ico2.png",
-                    "iconSelectedUrl": "n_ico2.png",
-                    "seq": 11,
-                    "tags": [],
-                    "subMenus": [
-                        {
-                            "id": 151,
-                            "parentId": 150,
-                            "name": "群体画像",
-                            "url": "/mainframe/GroupPortrait",
-                            "iconUrl": "",
-                            "iconSelectedUrl": "",
-                            "seq": 12,
-                            "tags": [],
-                            "subMenus": []
-                        },
-                        {
-                            "id": 152,
-                            "parentId": 150,
-                            "name": "个人画像",
-                            "url": "/mainframe/personalportrait",
-                            "iconUrl": "",
-                            "iconSelectedUrl": "",
-                            "seq": 13,
-                            "tags": [],
-                            "subMenus": []
-                        }
-                    ]
-                },
-                {
-                    "id": 2,
-                    "parentId": -1,
-                    "name": "轨迹分析",
-                    "url": "",
-                    "iconUrl": "n_ico3.png",
-                    "iconSelectedUrl": "n_ico3.png",
-                    "seq": 14,
-                    "tags": [],
-                    "subMenus": [
-                        {
-                            "id": 4,
-                            "parentId": 2,
-                            "name": "个人轨迹",
-                            "url": "/mainframe/personalpath",
-                            "iconUrl": "",
-                            "iconSelectedUrl": "",
-                            "seq": 58,
-                            "tags": [],
-                            "subMenus": []
-                        },
-                        {
-                            "id": 153,
-                            "parentId": 2,
-                            "name": "群体轨迹",
-                            "url": "/mainframe/grouppath",
-                            "iconUrl": "",
-                            "iconSelectedUrl": "",
-                            "seq": 59,
-                            "tags": [],
-                            "subMenus": []
-                        }
-                    ]
-                },
-                {
-                    "id": 178,
-                    "parentId": -1,
-                    "name": "综合预警",
-                    "url": "/mainframe/comprehensivewarning",
-                    "iconUrl": "",
-                    "iconSelectedUrl": "",
-                    "seq": 256,
-                    "tags": [],
-                    "subMenus": []
-                },
-                {
-                    "id": 179,
-                    "parentId": -1,
-                    "name": "系统设置",
-                    "url": "/mainframe/systemsetup",
-                    "iconUrl": "",
-                    "iconSelectedUrl": "",
-                    "seq": 257,
-                    "tags": [],
-                    "subMenus": [
-                        {
-                            "id": 180,
-                            "parentId": 179,
-                            "name": "预警设置",
-                            "url": "/mainframe/systemsetup/earlywarningsetting",
-                            "iconUrl": "",
-                            "iconSelectedUrl": "",
-                            "seq": 387,
-                            "tags": [],
-                            "subMenus": []
-                        },
-                        {
-                            "id": 181,
-                            "parentId": 179,
-                            "name": "行为轨迹设置",
-                            "url": "/mainframe/systemsetup/behaviortrajectory",
-                            "iconUrl": "",
-                            "iconSelectedUrl": "",
-                            "seq": 388,
-                            "tags": [],
-                            "subMenus": []
-                        }
-                    ]
-                },
-                {
-                    "id": 10,
-                    "parentId": -1,
-                    "name": "权限管理",
-                    "url": "",
-                    "iconUrl": "xitongguanli.png",
-                    "iconSelectedUrl": "xitongguanli2.png",
-                    "seq": 259,
-                    "tags": [],
-                    "subMenus": [
-                        {
-                            "id": 25,
-                            "parentId": 10,
-                            "name": "账户管理",
-                            "url": "/mainframe/accessmanage/account",
-                            "iconUrl": "",
-                            "iconSelectedUrl": "",
-                            "seq": 264,
-                            "tags": [],
-                            "subMenus": []
-                        },
-                        {
-                            "id": 24,
-                            "parentId": 10,
-                            "name": "菜单管理",
-                            "url": "/mainframe/accessmanage/menu",
-                            "iconUrl": "",
-                            "iconSelectedUrl": "",
-                            "seq": 265,
-                            "tags": [],
-                            "subMenus": []
-                        },
-                        {
-                            "id": 26,
-                            "parentId": 10,
-                            "name": "权限配置",
-                            "url": "/mainframe/accessmanage/authority",
-                            "iconUrl": "",
-                            "iconSelectedUrl": "",
-                            "seq": 266,
-                            "tags": [],
-                            "subMenus": []
-                        }
-                    ]
-                }
-            ],
-            "errorCode": null
-        }
+			"success": true,
+			"msg": "成功",
+			"obj": [
+				{
+					"id": 150,
+					"parentId": -1,
+					"name": "Dashboard",
+					"url": "",
+					"iconUrl": "n_ico2.png",
+					"iconSelectedUrl": "n_ico2.png",
+					"seq": 11,
+					"tags": [],
+					"subMenus": [
+						{
+							"id": 151,
+							"parentId": 150,
+							"name": "分析页",
+							"url": "/dashboard/analysis",
+							"iconUrl": "",
+							"iconSelectedUrl": "",
+							"seq": 12,
+							"tags": [],
+							"subMenus": []
+						},
+						{
+							"id": 152,
+							"parentId": 150,
+							"name": "关系页",
+							"url": "/dashboard/relation",
+							"iconUrl": "",
+							"iconSelectedUrl": "",
+							"seq": 13,
+							"tags": [],
+							"subMenus": []
+						}
+					]
+				},
+				{
+					"id": 2,
+					"parentId": -1,
+					"name": "地图",
+					"url": "",
+					"iconUrl": "n_ico3.png",
+					"iconSelectedUrl": "n_ico3.png",
+					"seq": 14,
+					"tags": [],
+					"subMenus": [
+						{
+							"id": 4,
+							"parentId": 2,
+							"name": "百度地图",
+							"url": "/map/baidumaps",
+							"iconUrl": "",
+							"iconSelectedUrl": "",
+							"seq": 58,
+							"tags": [],
+							"subMenus": []
+						},
+						{
+							"id": 153,
+							"parentId": 2,
+							"name": "bmap",
+							"url": "/map/bmap",
+							"iconUrl": "",
+							"iconSelectedUrl": "",
+							"seq": 59,
+							"tags": [],
+							"subMenus": []
+						}
+					]
+				},
+				{
+					"id": 10,
+					"parentId": -1,
+					"name": "权限管理",
+					"url": "",
+					"iconUrl": "xitongguanli.png",
+					"iconSelectedUrl": "xitongguanli2.png",
+					"seq": 259,
+					"tags": [],
+					"subMenus": [
+						{
+							"id": 25,
+							"parentId": 10,
+							"name": "账户管理",
+							"url": "/accessmanage/account",
+							"iconUrl": "",
+							"iconSelectedUrl": "",
+							"seq": 264,
+							"tags": [],
+							"subMenus": []
+						},
+						{
+							"id": 24,
+							"parentId": 10,
+							"name": "菜单管理",
+							"url": "/accessmanage/menu",
+							"iconUrl": "",
+							"iconSelectedUrl": "",
+							"seq": 265,
+							"tags": [],
+							"subMenus": []
+						},
+						{
+							"id": 26,
+							"parentId": 10,
+							"name": "权限配置",
+							"url": "/accessmanage/authority",
+							"iconUrl": "",
+							"iconSelectedUrl": "",
+							"seq": 266,
+							"tags": [],
+							"subMenus": []
+						}
+					]
+				}
+			],
+			"errorCode": null
+		}
         
         if(res.success){
             this.setState({

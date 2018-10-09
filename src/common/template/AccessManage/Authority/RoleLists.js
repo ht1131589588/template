@@ -27,20 +27,8 @@ class RoleLists extends Component {
             "msg": "成功",
             "obj": [
                 {
-                    "id": 1,
-                    "roleName": "领导",
-                },
-                {
-                    "id": 10,
-                    "roleName": "学生",
-                },
-                {
-                    "id": 20,
-                    "roleName": "辅导员",
-                },
-                {
                     "id": 21,
-                    "roleName": "代课教师",
+                    "roleName": "管理员",
                 },
                 {
                     "id": 29,

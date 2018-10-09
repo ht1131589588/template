@@ -32,7 +32,7 @@ class Menu extends React.Component {
 				{
 					"id": 150,
 					"parentId": -1,
-					"name": "综合画像",
+					"name": "Dashboard",
 					"url": "",
 					"iconUrl": "n_ico2.png",
 					"iconSelectedUrl": "n_ico2.png",
@@ -42,8 +42,8 @@ class Menu extends React.Component {
 						{
 							"id": 151,
 							"parentId": 150,
-							"name": "群体画像",
-							"url": "/mainframe/GroupPortrait",
+							"name": "分析页",
+							"url": "/dashboard/analysis",
 							"iconUrl": "",
 							"iconSelectedUrl": "",
 							"seq": 12,
@@ -53,8 +53,8 @@ class Menu extends React.Component {
 						{
 							"id": 152,
 							"parentId": 150,
-							"name": "个人画像",
-							"url": "/mainframe/personalportrait",
+							"name": "关系页",
+							"url": "/dashboard/relation",
 							"iconUrl": "",
 							"iconSelectedUrl": "",
 							"seq": 13,
@@ -66,7 +66,7 @@ class Menu extends React.Component {
 				{
 					"id": 2,
 					"parentId": -1,
-					"name": "轨迹分析",
+					"name": "地图",
 					"url": "",
 					"iconUrl": "n_ico3.png",
 					"iconSelectedUrl": "n_ico3.png",
@@ -76,8 +76,8 @@ class Menu extends React.Component {
 						{
 							"id": 4,
 							"parentId": 2,
-							"name": "个人轨迹",
-							"url": "/mainframe/personalpath",
+							"name": "百度地图",
+							"url": "/map/baidumaps",
 							"iconUrl": "",
 							"iconSelectedUrl": "",
 							"seq": 58,
@@ -87,56 +87,11 @@ class Menu extends React.Component {
 						{
 							"id": 153,
 							"parentId": 2,
-							"name": "群体轨迹",
-							"url": "/mainframe/grouppath",
+							"name": "bmap",
+							"url": "/map/bmap",
 							"iconUrl": "",
 							"iconSelectedUrl": "",
 							"seq": 59,
-							"tags": [],
-							"subMenus": []
-						}
-					]
-				},
-				{
-					"id": 178,
-					"parentId": -1,
-					"name": "综合预警",
-					"url": "/mainframe/comprehensivewarning",
-					"iconUrl": "",
-					"iconSelectedUrl": "",
-					"seq": 256,
-					"tags": [],
-					"subMenus": []
-				},
-				{
-					"id": 179,
-					"parentId": -1,
-					"name": "系统设置",
-					"url": "/mainframe/systemsetup",
-					"iconUrl": "",
-					"iconSelectedUrl": "",
-					"seq": 257,
-					"tags": [],
-					"subMenus": [
-						{
-							"id": 180,
-							"parentId": 179,
-							"name": "预警设置",
-							"url": "/mainframe/systemsetup/earlywarningsetting",
-							"iconUrl": "",
-							"iconSelectedUrl": "",
-							"seq": 387,
-							"tags": [],
-							"subMenus": []
-						},
-						{
-							"id": 181,
-							"parentId": 179,
-							"name": "行为轨迹设置",
-							"url": "/mainframe/systemsetup/behaviortrajectory",
-							"iconUrl": "",
-							"iconSelectedUrl": "",
-							"seq": 388,
 							"tags": [],
 							"subMenus": []
 						}
@@ -156,7 +111,7 @@ class Menu extends React.Component {
 							"id": 25,
 							"parentId": 10,
 							"name": "账户管理",
-							"url": "/mainframe/accessmanage/account",
+							"url": "/accessmanage/account",
 							"iconUrl": "",
 							"iconSelectedUrl": "",
 							"seq": 264,
@@ -167,7 +122,7 @@ class Menu extends React.Component {
 							"id": 24,
 							"parentId": 10,
 							"name": "菜单管理",
-							"url": "/mainframe/accessmanage/menu",
+							"url": "/accessmanage/menu",
 							"iconUrl": "",
 							"iconSelectedUrl": "",
 							"seq": 265,
@@ -178,7 +133,7 @@ class Menu extends React.Component {
 							"id": 26,
 							"parentId": 10,
 							"name": "权限配置",
-							"url": "/mainframe/accessmanage/authority",
+							"url": "/accessmanage/authority",
 							"iconUrl": "",
 							"iconSelectedUrl": "",
 							"seq": 266,

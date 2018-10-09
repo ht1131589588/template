@@ -86,35 +86,15 @@ class Filter extends React.Component{
 			"success": true,
 			"msg": "成功",
 			"obj": [
-				{
-					"id": 1,
-					"roleName": "管理员4",
-					"remark": "管理员",
-					"createTime": 1516431152000,
-					"updateTime": 1536045400000
-				},
-				{
-					"id": 10,
-					"roleName": "学生",
-					"remark": "",
-					"createTime": 1519810586000,
-					"updateTime": 1519811232000
-				},
-				{
-					"id": 20,
-					"roleName": "教师123",
-					"remark": "教师1",
-					"createTime": 1524736133000,
-					"updateTime": 1524736319000
-				},
-				{
-					"id": 29,
-					"roleName": "超级管理员",
-					"remark": "拥有权限管理模块的设置权限不包含菜单",
-					"createTime": 1536549032000,
-					"updateTime": 1536550539000
-				}
-			]
+                {
+                    "id": 21,
+                    "roleName": "管理员",
+                },
+                {
+                    "id": 29,
+                    "roleName": "超级管理员",
+                }
+            ]
 		}
 
 		if (res.success) {
