@@ -9,8 +9,10 @@ import BasicLayout from './BasicLayout';
 import NProgress from 'nprogress';
 import 'nprogress/nprogress.css'
 
+let currHref = '';
+
 function Layout({ children, location, login, loading, dispatch }) {
-  let currHref = '';
+  
   const href = window.location.href;    // 浏览器地址栏中地址
   if (currHref !== href) {  // currHref 和 href 不一致时说明进行了页面跳转
       NProgress.start();    // 页面开始加载时调用 start 方法

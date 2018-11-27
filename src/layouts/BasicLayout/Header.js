@@ -10,13 +10,13 @@ class Header extends Component {
     changePassShow: false,
   }
 
-  loginOutAction() {
+  loginOutAction = () => {
     const { dispatch } = this.props;
     dispatch({
       type: 'global/signout'
     });
   }
-  changePass() {
+  changePass = () => {
     this.setState({
       changePassShow: true,
     });
@@ -27,7 +27,7 @@ class Header extends Component {
         changePassShow: false,
     });
   }
-  handleCancel() {
+  handleCancel = () => {
     this.setState({
       changePassShow: false,
     });
